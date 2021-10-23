@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximun-scale=3">
+    <link rel="stylesheet" href="styles/estilos.css">
+
+    <title>Proyecto Web Sass+Less</title>
+</head>
+<body>
+    <!--Navigation-->
+    <input id="mode" type="checkbox">
+    <nav>
+        <a href="" class="brand">css</a><button class="btn">&equiv;</button>
+        <ul class="menu">
+            <li><a href="#" title="inicio">Inicio</a></li>
+            <li><a href="about.html" title="acerca">Acerca</a></li>
+            <li><a href="gallery.html" title="galeria">Galeria</a></li>
+            <li><a href="contact.html" title="contacto">Contacto</a></li>
+            <li><label for="mode">Modo</label></li>
+        </ul>
+        <a class="icon-back" href="#">atrás</a>
+    </nav>
+    <a href="#">Atras</a>
+    
+    <!--Heading-->
+    <header id="header">
+        <div class="header">
+            <h1>Maquetado Avanzado</h1>
+            <p>html | css | js</p>
+            <div class="control"><span class="active"></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <ul class="slide">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <button></button>
+            <button></button></ul>
+    </header>
+
+    <!--Content-->
+    <main class="mode">
+<section>
+    <header class="active">
+        <h2>Elementos HTML5</h2>
+        <p>Incorporaciones al standar</p>
+    </header>
+    <p>Con el surgimiento de HTML5 en 2014 se anadieron nuevos elementos, entre ellos, etiquetas que facilitan a los motores de busqueda la identificacion de cierto tipo de contenidos, haciendo incapie en la semantica, como los que se mencionan mas adelante </p>
+    <article>
+        <header>
+            <h3>Etiquetas Estadisticas</h3>
+        </header>
+        <p>
+            Son elementos que se utilizan para definir el estado de una tarea, estas son <strong>&lt;progress</strong>que se debe implementar cuando la misma aun no fue finalizada y por lo tanto sus valores pueden cambiar <em>Ej: el avance durante la capacitacion</em>; y <strong>&lt;meter</strong> que a diferencia de la anterior se utiliza cuando la tarea due finalizada y necesitamos realizar una comparacion <em>Ej: el resultado de un examen</em>. 
+        </p>
+        <ul class="example">
+            <li>
+                <strong>Progress</strong>
+                <ul>
+                    <li>
+                        <progress></progress>
+                        value = undefined
+                    </li>
+                    <li>
+                        <progress value="20" max="100"></progress>
+                        value= 20 max=100
+                    </li>
+                    <li class="progress">
+                        <progress max="100"></progress>
+                        <input type="number" min="0" max="100">
+                        value= JavaScript
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <strong>Meter</strong>
+                <ul>
+                    <li>
+                        <meter low="40" high="70" optimum="100" max="100" value="30"></meter>
+                    </li>
+                    <li>
+                        <meter low="40" high="70" optimum="100" max="100" value="60"></meter>
+                    </li>
+                    <li>
+                        <meter low="40" high="70" optimum="100" max="100" value="90"></meter>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </article>
+</section>
+<section>
+    <header>
+        <h2>Preprocesadores</h2>
+        <p>Pseudoclases</p>
+    </header>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, iusto quos pariatur incidunt cum voluptas ipsum blanditiis odit fuga similique dicta quaerat sit animi est molestiae nam maxime sapiente iste.
+    </p>
+    <article>
+        <header>
+            <h3>Sass</h3>
+        </header>
+    </article>
+    <article>
+        <header>
+            <h3>Less</h3>
+        </header>
+        <ul class="example">
+            <li class="bg-primary">Primary</li>
+            <li class="bg-secondary">Secondary</li>
+            <li class="bg-light">light</li>
+            <li class="bg-dark">Dark</li>
+            <li class="bg-danger">Danger</li>
+            <li class="bg-warning">Warning</li>
+            <li class="bg-success">Success</li>
+            <li class="bg-info">Info</li>
+        </ul>
+    </article>
+</section>
+
+<!--BUEN EJEMPLO PARA CLASE SASS-->
+<footer id="footer">
+    <div class="map">
+
+    </div>
+    <form action="" id="contact">
+        
+        <h2>Contactanos</h2>
+        
+        <label for="">Ingrese su Nombre</label><input type="text" required placeholder="ingrese su nombre">
+        <div class="valid">
+            
+            Ingrese su nombre completo solamente con letras y espacios, el mismo debe poseer entre 3 y 50 caracteres.
+
+        </div>
+        <label for="">Ingrese su Correo</label><input type="email" required placeholder="Ingrese su correo electronico">
+        <div class="valid">
+
+            Ingrese una direccion de correo valida con al menos 8 caracteres y que respete la siguiente estructura: "usuario@servidor".
+
+        </div>
+        <label for="">Ingrese su Telefono</label><input type="tel" required placeholder="Ingrese su telefono">
+        <div class="valid">
+
+            Ingrese su numero colocando la caracteristica entre parentesis y separando con un guion cada 3 o  6 digitos como se muestra en el ejemplo: (5411)4043-1284
+
+        </div>
+        <label for="">Ingrese su consulta</label><textarea id="" name="" placeholder="Consulta: Necesito un presupuesto"></textarea><!--No dejar espacio en etiqueta textarea, se ve mal-->
+        <button>enviar</button>
+    
+    </form>
+    <p class="copy">
+        &copy; todos los derechos reservados
+    </p>
+    <div class="social">
+        <a href="https://www.facebook.com/" class="facebook" target="_blanck"></a>
+        <a href="https://www.instagram.com/" class="instragram" target="_blanck"></a>
+        <a href="https://www.twitter.com/" class="twitter" target="_blanck"></a>
+        <a href="https://github.com/juanmabrignole" class="github" target="_blanck"></a>
+
+    </div>
+</footer>
+
+    </main>
+
+    <!--Scripts JS-->
+    <script src="script/estilos.js"></script>
+    
+</body>
+</html>

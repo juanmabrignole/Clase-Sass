@@ -1,0 +1,138 @@
+.icon, #footer .social a {
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  margin: .25rem;
+  background: var(--bg) center/2.5rem no-repeat;
+}
+
+.icon:hover, #footer .social a:hover {
+  background-size: 3rem;
+}
+
+.text-primary {
+  color: #24c;
+}
+
+.text-secundary {
+  color: #c24;
+}
+
+.text-light, #footer #contact {
+  color: #eee;
+}
+
+.text-dark {
+  color: #333;
+}
+
+.text-danger {
+  color: #c33;
+}
+
+.text-warning {
+  color: #ca3;
+}
+
+.text-success {
+  color: #3ca;
+}
+
+.text-info {
+  color: #36c;
+}
+
+.bg-primary, #footer #contact {
+  background-color: #24c;
+}
+
+.bg-secundary {
+  background-color: #c24;
+}
+
+.bg-light {
+  background-color: #eee;
+}
+
+.bg-dark {
+  background-color: #333;
+}
+
+.bg-danger {
+  background-color: #c33;
+}
+
+.bg-warning {
+  background-color: #ca3;
+}
+
+.bg-success {
+  background-color: #3ca;
+}
+
+.bg-info {
+  background-color: #36c;
+}
+
+.border-primary {
+  border-color: #24c;
+}
+
+.border-secundary {
+  border-color: #c24;
+}
+
+.border-light {
+  border-color: #eee;
+}
+
+.border-dark, #footer #contact input:focus,
+#footer #contact textarea:focus {
+  border-color: #333;
+}
+
+.border-danger, #footer #contact input:focus:invalid,
+#footer #contact textarea:focus:invalid {
+  border-color: #c33;
+}
+
+.border-warning {
+  border-color: #ca3;
+}
+
+.border-success, #footer #contact input:focus:valid,
+#footer #contact textarea:focus:valid {
+  border-color: #3ca;
+}
+
+.border-info {
+  border-color: #36c;
+}
+
+#footer {
+  margin: 0;
+  border: border;
+  padding: 1rem;
+}
+
+#footer #contact {
+  background-color: var(--first);
+  margin: 1rem;
+  border: border;
+  padding: auto;
+  display: -ms-grid;
+  display: grid;
+}
+
+#footer #contact input,
+#footer #contact textarea {
+  outline: none;
+  border: border;
+  padding: 0.25rem 5rem;
+}
+
+#footer #contact .valid {
+  max-height: 0;
+  overflow: hidden;
+}
+/*# sourceMappingURL=footer.css.map */
